@@ -7,11 +7,40 @@
     <!-- <link rel="stylesheet" href="ism/css/bootstrap.css"> -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Tools</title>
     <style>
         body {
             height: 1000px;
+        }
+
+        .dot {
+            text-align: center;
+            z-index: 5;
+            display: inline;
+            /* margin-left: 0.2em; */
+            margin-right: 0.3em;
+            line-height: 0;
+            opacity: 0;
+            animation: showHideDot 0.5s ease-in-out infinite;
+        }
+
+        @keyframes showHideDot {
+            0% {
+                opacity: 0;
+            }
+
+            50% {
+                opacity: 1;
+            }
+
+            60% {
+                opacity: 1;
+            }
+
+            100% {
+                opacity: 1;
+            }
         }
     </style>
 
@@ -45,7 +74,6 @@
             <strong>
                 <ul>
                     <li>Tiket yang sudah check-in tidak dapat dilakukan pembatalan (Hangus).</li>
-                    <li>Pengembalian Dana 7-14 hari kerja</li>
                 </ul>
             </strong>
         </div>
@@ -67,7 +95,9 @@
                 </li>
                 <li class="nav-item ">
                     <a data-toggle="tab" href="#covid" class="nav-item btn ml-4"
-                        style="background-color:orangered;color:white">COVID-19</a>
+                        style="background-color:orangered;color:white">
+                        <h1 class="dot">.</h1>COVID-19
+                    </a>
                 </li>
             </ul>
 
@@ -194,17 +224,23 @@
                     </ul>
                 </div>
                 <div class="tab-pane fade" id="covid">
+                    <div class="alert alert-warning" role="alert">
+                        <span class="fas fa-exclamation"></span> Efektif 1 April
+                    </div>
                     <h3>Regulasi Refund dan Reschedule Maskapai</h3>
                     <h6>Lion Air</h6>
                     <ul>
-                        <li>Cancellation Fee 10% + biaya Administrasi 60000</li>
-                        <li>Pencairan 15-30 hari kerja</li>
+                        <li>Pengembalian dana refund tidak dalam bentuk uang tunai
+                            melainkan voucher</li>
+                        <li>Kode voucher dicetak melalui agen tempat penumpang membeli tiket</li>
+                        <li>Voucher dapat diklaim ke kantor Lion Air terdekat dengan membawa kartu identitas serta kode
+                            voucher yang telah tercetak sebelumnya</li>
                     </ul>
                     <h6>Garuda</h6>
                     <ul>
-                        <li>Refund Full</li>
-                        <li>Pengembalian dalam bentuk voucher bukan uang tunai</li>
-                        <li>Pembatalan dilakukan secara mandiri oleh penumpang melalui kantor Garuda terdekat </li>
+                        <li>Pengembalian dana refund tidak dalam bentuk uang tunai melainkan voucher yang dapat
+                            digunakan untuk keberangkatan selanjutnya</li>
+                        <li>Proses Klaim dilakukan secara mandiri oleh penumpang melalui kantor Garuda terdekat </li>
                     </ul>
                     <h6>Citilink</h6>
                     <ul>
@@ -212,8 +248,9 @@
                     </ul>
                     <h6>Air Asia</h6>
                     <ul>
-                        <li>Refund Full dan Reshcedule tanpa biaya melalui sampai tanggal keberangkatan 17 Mei 2020</li>
-                        <li>Reshcedule dibawah tanggal 1 Oktober 2020</li>
+                        <li>Refund Full dan Reshcedule tanpa biaya sampai tanggal keberangkatan 17 Mei 2020</li>
+                        <li>Penumpang dapat melakukan perubahan jadwal ke tanggal berapapun dengan ketentuan dibawah
+                            tanggal 1 Oktober 2020</li>
                     </ul>
                     <h6>Sriwijaya</h6>
                     <ul>
@@ -235,6 +272,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
 
 
 
