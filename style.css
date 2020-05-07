@@ -1,0 +1,27 @@
+body {
+    height: 1000px;
+}
+.dot {
+    text-align: center;
+    z-index: 5;
+    display: inline;
+    /* margin-left: 0.2em; */
+    margin-right: 0.3em;
+    line-height: 0;
+    opacity: 0;
+    animation: showHideDot 0.5s ease-in-out infinite;
+}
+@keyframes showHideDot {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    60% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
+}
