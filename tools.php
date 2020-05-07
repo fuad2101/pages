@@ -1,52 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php
+include 'header.php';
+?>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="stylesheet" href="ism/css/bootstrap.css"> -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="">
-    <title>Tools</title>
-    <style>
-        body {
-            height: 1000px;
-        }
-    </style>
-
-</head>
-
-<body>
-    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">Tools</a>
-        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
-            aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="collapsibleNavId">
-            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                <li class="nav-item active">
-                    <a class="nav-link" href="tools.php">Refund/Reschedule <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="format_sms.php">Format SMS</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
     <div class="container">
-
-        <h1 class="display-3 text-center my-5">Aturan Pembatalan/Perubahan Maskapai</h1>
-        
+        <div class="row">
+            <h1 class="col display-3 text-center my-5">Aturan Pembatalan Dan Perubahan Jadwal</h1>
+        </div>
         <div class="alert alert-danger">
             <strong>
                 <ul>
                     <li>Tiket yang sudah check-in tidak dapat dilakukan pembatalan (Hangus).</li>
-                    <li>Pengembalian Dana 7-14 hari kerja</li>
                 </ul>
             </strong>
         </div>
-
         <div class="tab mt-3">
             <ul class="nav nav-tabs nav-stacked mb-5">
                 <li class="nav-item">
@@ -62,8 +28,13 @@
                 <li class="nav-item ">
                     <a data-toggle="tab" href="#garuda" class="nav-item btn btn-primary">Garuda</a>
                 </li>
+                <li class="nav-item ">
+                    <a data-toggle="tab" href="#covid" class="nav-item btn ml-4"
+                        style="background-color:orangered;color:white">
+                        <h1 class="dot">.</h1>COVID-19
+                    </a>
+                </li>
             </ul>
-
             <div class="tab-content">
                 <div class="tab-pane fade" id="lion">
                     <h5>Reschedule</h5>
@@ -79,9 +50,9 @@
                         dan harga baru.</small>
                     <h5>Refund</h5>
                     <ul>
-                        <li>Pembatalan lebih dari 72 jam: cancellation fee 25% dari basic fare</li>
-                        <li>Pembatalan 72 – 4 jam: cancellation fee 50% dari basic fare</li>
-                        <li>Pembatalan kurang dari 4 jam / No Show : cancellation fee 90% dari basic fare</li>
+                        <li>Pembatalan lebih dari 72 jam: cancellation fee 25% dari basic fare + Admin Rp.50.000</li>
+                        <li>Pembatalan 72 – 4 jam: cancellation fee 50% dari basic fare + Admin Rp.50.000</li>
+                        <li>Pembatalan kurang dari 4 jam / No Show : cancellation fee 90% dari basic fare + Admin Rp.50.000</li>
                     </ul>
                 </div>
                 <div class="tab-pane fade" id="sj">
@@ -104,9 +75,9 @@
                     </ul>
                     <h5>Refund</h5>
                     <ul>
-                        <li>Pembatalan lebih dari 72 Jam sebelum keberangkatan: cancellation fee 25%</li>
-                        <li>Pembatalan 24 - 72 Jam sebelum keberangkatan: cancellation fee 60%</li>
-                        <li>Pembatalan 4 - 24 Jam sebelum keberangkatan: cancellation fee 80%</li>
+                        <li>Pembatalan lebih dari 72 Jam sebelum keberangkatan: cancellation fee 25% + Admin Rp.50.000</li>
+                        <li>Pembatalan 24 - 72 Jam sebelum keberangkatan: cancellation fee 60% + Admin Rp.50.000</li>
+                        <li>Pembatalan 4 - 24 Jam sebelum keberangkatan: cancellation fee 80% + Admin Rp.50.000</li>
                         <li>Pembatalan kurang dari 4 Jam sebelum keberangkatan atau setelah jam penerbangan:
                             cancellation
                             fee 90%
@@ -148,15 +119,14 @@
                     </small>
                     <h5>Refund</h5>
                     <ul>
-                        <li>Pembatalan lebih dari 72 jam : Cancellation fee 25% dari basic fare</li>
-                        <li>Pembatalan 72 – 48 jam : Cancellation fee 50% dari basic fare</li>
-                        <li>Pembatalan 48 – 24 jam : Cancellation fee 60% dari basic fare</li>
-                        <li>Pembatalan 24 – 12 jam : Cancellation fee 70% dari basic fare</li>
-                        <li>Pembatalan 12 – 4 jam : Cancellation fee 80% dari basic fare</li>
-                        <li>Pembatalan 4 jam – 1 jam : Cancellation fee 90% dari basic fare</li>
+                        <li>Pembatalan lebih dari 72 jam : Cancellation fee 25% dari basic fare + Admin Rp.50.000</li>
+                        <li>Pembatalan 72 – 48 jam : Cancellation fee 50% dari basic fare + Admin Rp.50.000</li>
+                        <li>Pembatalan 48 – 24 jam : Cancellation fee 60% dari basic fare + Admin Rp.50.000</li>
+                        <li>Pembatalan 24 – 12 jam : Cancellation fee 70% dari basic fare + Admin Rp.50.000</li>
+                        <li>Pembatalan 12 – 4 jam : Cancellation fee 80% dari basic fare + Admin Rp.50.000</li>
+                        <li>Pembatalan 4 jam – 1 jam : Cancellation fee 90% dari basic fare + Admin Rp.50.000</li>
                         <li>Pembatalan kurang dari 1 jam / No Show : Tidak bisa direfund</li>
                     </ul>
-
                 </div>
                 <div class="tab-pane fade" id="garuda">
                     <h5>Reschedule</h5>
@@ -179,21 +149,59 @@
                     </small>
                     <h5>Refund</h5>
                     <ul>
-                        <li>Pembatalan lebih dari 72 jam : Cancellation fee 25% dari basic fare</li>
-                        <li>Pembatalan 72 - 24 jam : Cancellation fee 50% dari basic fare</li>
-                        <li>Pembatalan 24 - 2 jam : Cancellation fee 70% dari basic fare</li>
-                        <li>Pembatalan 2 - Noshow : Cancellation fee 90% dari basic fare</li>
-                        <li>Pembatalan setelah melewati jam keberangkat : Cancellation fee 90% dari basic fare</li>
+                        <li>Pembatalan lebih dari 72 jam : Cancellation fee 25% dari basic fare + Admin Rp.50.000</li>
+                        <li>Pembatalan 72 - 24 jam : Cancellation fee 50% dari basic fare + Admin Rp.50.000</li>
+                        <li>Pembatalan 24 - 2 jam : Cancellation fee 70% dari basic fare + Admin Rp.50.000</li>
+                        <li>Pembatalan 2 - Noshow : Cancellation fee 90% dari basic fare + Admin Rp.50.000</li>
+                        <li>Pembatalan setelah melewati jam keberangkat : Cancellation fee 90% dari basic fare + Admin Rp.50.000</li>
+                    </ul>
+                </div>
+                <div class="tab-pane fade" id="covid">
+                    <div class="alert alert-warning" role="alert">
+                        <span class="fas fa-exclamation"></span> Efektif 1 April
+                    </div>
+                    <h3>Lion Air</h3>
+                    <img src="img/lion.png" class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" alt="">
+                    <br>
+                    <br>
+                    <ul>
+                        <li>Voucher dapat diklaim ke kantor Lion Air terdekat dengan membawa kartu identitas serta tiket yang dibatalkan</li>
+                    </ul>
+                    <h3>Garuda</h3>
+                    <ul>
+                        <li>Pengembalian dana refund tidak dalam bentuk uang tunai melainkan voucher yang dapat
+                            digunakan untuk keberangkatan selanjutnya</li>
+                        <li>Proses Klaim dilakukan secara mandiri oleh penumpang melalui kantor Garuda terdekat </li>
+                    </ul>
+                    <h3>Citilink</h3>
+                    <ul>
+                        <li>Regulasi normal</li>
+                    </ul>
+                    <h3>Air Asia</h3>
+                    <ul>
+                        <li>Refund Full dan Reshcedule tanpa biaya sampai tanggal keberangkatan 17 Mei 2020</li>
+                        <li>Penumpang dapat melakukan perubahan jadwal ke tanggal berapapun dengan ketentuan dibawah
+                            tanggal 1 Oktober 2020</li>
+                    </ul>
+                    <h3>Sriwijaya</h3>
+                    <ul>
+                        <li>Cancellation Fee 15%</li>
+                        <li>Pencairan 15-30 hari kerja</li>
                     </ul>
                 </div>
             </div>
         </div>
-    </div>
-
-
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </div>  
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
 
 
 
