@@ -68,11 +68,7 @@ require ('header.php');
                 <tr>
                     <td>Dana Refund</td>
                     <td scope="row">
-                        <p id="6">Selamat Siang.Terkait pembatalan (refund) Air Asia rute KualaLumpur Makassar 03
-                            April atas nama penumpang : Mr. TOLAI SUNUSI, saat ini dana sudah dicairkan senilai
-                            Rp.759.900. Dana dapat diterima tunai di kantor atau melalui transfer via BNI atau BRI.
-                            Untuk pengiriman dana via transfer, silahkan mengisi form berikut:<br>Nomor
-                            Rekening:<br>Nama pemilik rekening:<br>Nama Bank :<br>Terima kasih.</p>
+                        <p id="6">Selamat Siang.Terkait pembatalan (refund) Air Asia rute KualaLumpur Makassar 03 April atas nama penumpang : Mr. TOLAI SUNUSI, saat ini dana sudah dicairkan senilai Rp.759.900. Dana dapat diterima tunai di kantor atau melalui transfer via BNI atau BRI. Untuk dana via transfer, silahkan balas pesan ini dengan info nomor rekening dengan format : Nomor Rekening [spasi] Nama pemilik rekening [spasi] Nama Bank Terima kasih.</p>
                     </td>
                     <td>
                         <button class="btn btn-secondary" onclick="copyToClipboard('#6')"
