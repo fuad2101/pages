@@ -1,5 +1,6 @@
 <?php
 require ('header.php');
+
 ?>
     <div class="container">
         <h1 class="display-3 text-center my-5">Format SMS</h1>
@@ -8,7 +9,7 @@ require ('header.php');
                 <tr>
                     <td class="">Info Booking</td>
                     <td scope="row">
-                        <p id="1">BMW Travel - [Rute] [Tanggal] [Jam] [Maskapai] . Status: BOOKED a/n:[Nama] dengan batas bayar [Tanggal] [Jam]. Pembayaran via transfer di No. Rek a/n: HJ. NURFADILAH BNI:0504-277-266 BRI : 025-901-036-139-503.Total:[Total]. Mohon konfirmasi setelah transfer. Terima kasih</p>
+                        <p id="1">Reservastion Details - [Rute] [Tanggal] [Jam] [Maskapai] . Status: BOOKED a/n:[Nama] dengan batas bayar [Tanggal] [Jam]. Pembayaran via transfer di No. Rek a/n: HJ. NURFADILAH BNI:0504-277-266 BRI : 025-901-036-139-503.Total:[Total]. Mohon konfirmasi setelah transfer. Terima kasih</p>
                     </td>
                     <td>
                         <button class="btn btn-secondary" onclick="copyToClipboard('#1')"
@@ -28,7 +29,7 @@ require ('header.php');
                 <tr>
                     <td>No.Rekening</td>
                     <td scope="row">
-                        <p id="3">BMW Travel - Pembayaran via transfer di No. Rek a/n: HJ. NURFADILAH BNI : 0504-277-266 BRI : 025-901-036-139-503. Total [Total] Mohon konfirmasi setelah transfer. Terima kasih</p>
+                        <p id="3"> - Pembayaran via transfer di No. Rek a/n: HJ. NURFADILAH BNI : 0504-277-266 BRI : 025-901-036-139-503. Total [Total] Mohon konfirmasi setelah transfer. Terima kasih</p>
                     </td>
                     <td>
                         <button class="btn btn-secondary" onclick="copyToClipboard('#3')"
@@ -38,7 +39,7 @@ require ('header.php');
                 <tr>
                     <td rowspan="2" class="align-middle">Kode Booking</td>
                     <td scope="row">
-                        <p id="4">BMW Travel - [Maskapai] Air Ref. Code : [Kode Booking] Rute[Rute][Hari/Tanggal] [Jam] [Flight No] a/n: [Nama] Seat No.: Gate/Terminal: Bagasi/pax:0Kg.Silahkan tunjukkan kode booking ini pada petugas, 2 jam sebelum jam terbang.Selamat Jalan.</p>
+                        <p id="4">Reservastion Details - [Maskapai] Air Ref. Code : [Kode Booking] Rute[Rute][Hari/Tanggal] [Jam] [Flight No] a/n: [Nama] Seat No.: Gate/Terminal: Bagasi/pax:0Kg.Silahkan tunjukkan kode booking ini pada petugas, 2 jam sebelum jam terbang.Selamat Jalan.</p>
                     <td>
                         <button class="btn btn-secondary" onclick="copyToClipboard('#4')"
                             onmouseout="outFunc()">Copy</button>
@@ -57,8 +58,7 @@ require ('header.php');
                 <tr>
                     <td>Flight Replacement</td>
                     <td scope="row">
-                        <p id="5">Kepada Yth. Calon Penumpang Garuda Airlines. Sehubungan dgn kendala operasional,
-                            jadwal penerbangan Makassar menuju Jogjakarta mengalami perubahan yg semula berangkat di tgl 04/03/2019 pkl 06.00 menjadi tgl 03/03/2019 pkl 06.00. Mohon maaf atas ketidaknyamanannya. Demikian terima kasih. Info lebih lanjut silakan hubungi 0804 177 8899</p>
+                        <p id="5">Kepada Yth. Calon Penumpang Garuda Airlines. Sehubungan dgn kendala operasional,jadwal penerbangan Makassar menuju Jogjakarta mengalami perubahan yg semula berangkat di tgl 04/03/2019 pkl 06.00 menjadi tgl 03/03/2019 pkl 06.00. Mohon maaf atas ketidaknyamanannya. Demikian terima kasih. Info lebih lanjut silakan hubungi 0804 177 8899</p>
                     </td>
                     <td>
                         <button class="btn btn-secondary" onclick="copyToClipboard('#5')"
